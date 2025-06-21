@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Livros - Biblioteca Salman</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <header>
+    <h1>Ponto & Vírgula</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="livros.html">Livros</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nosso Catálogo de Livros</h2>
+    <p>Explore os livros disponíveis em nossa biblioteca:</p>
+
+    <input type="text" id="barra-pesquisa" placeholder="Digite o nome do livro..." />
+
+    <section class="destaques" id="lista-livros">
+
+      <div class="card">
+        <img src="Imagens/livro1.jpg" alt="Rainha Vermelha">
+        <h4>Rainha Vermelha</h4>
+        <p>Autor: Victoria Aveyard</p>
+        <p>Categoria: Fantasia  Distopia juvenil</p>
+        <a href="livro1.html" class="botao">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="Imagens/Livro2.jpg" alt="Quarta Asa">
+        <h4>Quarta Asa</h4>
+        <p>Autor: Rebecca Yarros</p>
+        <p>Categoria: Fantasia juvenil-adulta</p>
+        <a href="livro2.html" class="botao">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="Imagens/livro3.jpg" alt="Corte de Névoa e Fúria">
+        <h4>Corte de Névoa e Fúria</h4>
+        <p>Autor: Sarah J. Maas</p>
+        <p>Categoria: Fantasia</p>
+        <a href="livro3.html" class="botao">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="Imagens/livro4.jpg" alt="8 Segundos">
+        <h4>8 Segundos</h4>
+        <p>Autor: Camila Moreira</p>
+        <p>Categoria: Romance contemporâneo nacional</p>
+        <a href="livro4.html" class="botao">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="Imagens/livro5.jpg" alt="A Hipótese do Amor">
+        <h4>A Hipótese do Amor</h4>
+        <p>Autor: Ali Hazelwood</p>
+        <p>Categoria: Romance contemporâneo</p>
+        <a href="livro5.html" class="botao">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <img src="Imagens/livro6.jpg" alt="A Paciente Silenciosa">
+        <h4>A Paciente Silenciosa</h4>
+        <p>Autor: Alex Michaelides</p>
+        <p>Categoria: Thriller psicológico</p>
+        <a href="livro6.html" class="botao">Saiba mais</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Ponto & Vírgula</p>
+  </footer>
+
+  <script>
+const barra = document.getElementById("barra-pesquisa");
+const cards = document.querySelectorAll(".card");
+
+barra.addEventListener("input", function () {
+  const texto = barra.value.toLowerCase();
+
+  cards.forEach(function (card) {
+    const titulo = card.querySelector("h4").textContent.toLowerCase();
+    if (titulo.includes(texto)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+body {
+  font-family: Georgia, serif; 
+  background-color: #3e2723;   
+  color: #3e2723;              
+  line-height: 1.6;            
+  padding-bottom: 50px;        
+}
+
+header {
+  background-color: #3e2723;   
+  color: #d7ccc8;              
+  padding: 20px;               
+  text-align: center;          
+  border-bottom: 2px solid #a1887f; 
+}
+
+header h1 {
+  font-size: 32px;             
+  margin-bottom: 10px;         
+}
+
+nav {
+  margin-top: 10px;            
+}
+
+nav a {
+  color: #d7ccc8;              
+  margin: 0 15px;              
+  text-decoration: none;      
+  font-weight: bold;           
+}
+
+nav a:hover {
+  text-decoration: underline;  
+}
+
+footer {
+  background-color: #d7ccc8;   
+  color: #3e2723;              
+  text-align: center;          
+  padding: 15px;              
+  font-size: 14px;            
+  border-top: 2px solid #a1887f; 
+  margin-top: 30px;           
+}
+
+
+.botao {
+  display: inline-block;             
+  margin-top: 10px;                   
+  padding: 10px 16px;                 
+  background-color: #6d4c41;          
+  color: white;                       
+  text-decoration: none;             
+  border-radius: 6px;                 
+  font-size: 15px;                    
+  font-weight: bold;                 
+  transition: background-color 0.2s;  
+}
+
+.botao:hover {
+  background-color: #4e342e;          
+}
+
+
+main {
+  padding: 30px 20px;                 
+  max-width: 1000px;                 
+  margin: auto;                       
+}
+
+main h2 {
+  font-size: 30px;                    
+  text-align: center;                
+  margin-bottom: 30px;               
+  color: #d7ccc8;                     
+}
+
+.detalhes-livro {
+  display: flex;                      
+  gap: 30px;                          
+  background-color: #fffaf5;          
+  padding: 30px;                      
+  border-radius: 10px;               
+  box-shadow: 0 2px 8px rgba(78, 52, 46, 0.1); 
+  justify-content: center;           
+  align-items: flex-start;           
+}
+
+.capa-livro {
+  width: 250px;                       
+  border-radius: 6px;                 
+  box-shadow: 0 0 10px rgba(78, 52, 46, 0.2); 
+}
+
+.info-livro {
+  flex: 1;                            
+  min-width: 250px;                   
+  max-width: 600px;                   
+}
+
+
+
+@media (max-width: 768px) {
+  .detalhes-livro {
+    flex-direction: column;           
+    align-items: center;              
+    text-align: center;               
+  }
+
+  .info-livro {
+    max-width: 100%;                  
+  }
+
+  .capa-livro {
+    width: 70%;                      
+  }
+}

@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Georgia, serif; 
+  background-color: #3e2723;   
+  color: #ebe8e7;              
+  line-height: 1.6;            
+  padding-bottom: 50px;        
+}
+
+header {
+  background-color:  #3e2723; 
+  color: #f8f1e4;            
+  padding: 20px;             
+  text-align: center;       
+  border-bottom: 2px solid #a1887f; 
+}
+
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+nav {
+  margin-top: 10px;
+}
+
+
+nav a {
+  color: #f8f1e4;           
+  margin: 0 15px;           
+  text-decoration: none;    
+  font-weight: bold;        
+}
+
+nav a:hover {
+  text-decoration: underline; 
+}
+
+.imagem-destaque{display: flex;
+justify-content: center;}
+
+
+.imagem-destaque img {
+  width: 700px;               
+  max-height: 500px;         
+  object-fit: cover;         
+  border-radius: 30px;
+}
+
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+main p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+.Bem-vindo {
+  background-color: #5d4037;  
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;         
+  max-width: 800px;          
+}
+
+
+
+.destaques {
+  display: flex;            
+  justify-content: center;  
+  gap: 20px;                 
+  flex-wrap: wrap;           
+}
+
+
+.card {
+  background-color: #3e2723;              
+  border: 5px solid #5d4037;              
+  border-radius: 8px;                    
+  width: 200px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(78, 52, 46, 0.1); 
+  transition: transform 0.2s;            
+}
+
+
+.card:hover {
+  transform: scale(1.03); 
+}
+
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+.card h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+
+.card p {
+  font-size: 14px;
+}
+
+
+footer {
+  background-color: #d7ccc8;     
+  color: #3e2723;                
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+
+.form-contato {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #3e2723;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(78, 52, 46, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato label {
+  font-weight: bold;
+  color: #dbcab7;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato select {
+  padding: 10px;
+  border: 5px solid #a86126;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fefefe;
+}
+
+.form-contato textarea {
+  resize: vertical;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #6d4c41;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#barra-pesquisa {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .destaques {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
